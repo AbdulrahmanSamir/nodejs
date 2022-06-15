@@ -1,5 +1,5 @@
 # From base image node
-FROM public.ecr.aws/lambda/nodejs:16
+FROM public.ecr.aws/eag/nodejs:16-build
 
 # Create app directory
 RUN mkdir -p /usr/src/app
