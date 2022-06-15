@@ -1,5 +1,5 @@
 # From base image node
-FROM node:10
+FROM node:16
 
 # Create app directory
 RUN mkdir -p /usr/src/app
