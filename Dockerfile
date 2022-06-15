@@ -8,6 +8,8 @@ WORKDIR /usr/src/app
 # Copying all the files from your file system to container file system
 COPY package.json .
 
+RUN yum update -y && yum install -y nodejs
+
 # Install all dependencies
 RUN npm install
 
