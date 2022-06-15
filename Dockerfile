@@ -1,5 +1,5 @@
 # From base image node
-FROM public.ecr.aws/aws-containers/ecsdemo-nodejs:latest
+FROM public.ecr.aws/lambda/nodejs:16
 
 # Create app directory
 RUN mkdir -p /usr/src/app
@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 # Copying all the files from your file system to container file system
 COPY package.json .
 
-RUN yum update -y && yum install -y nodejs
+#RUN yum update -y && yum install -y nodejs
 
 # Install all dependencies
 RUN npm install
