@@ -1,5 +1,5 @@
 # From base image node
-FROM node:16
+FROM public.ecr.aws/aws-containers/ecsdemo-nodejs:latest
 
 # Create app directory
 RUN mkdir -p /usr/src/app
